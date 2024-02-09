@@ -1,0 +1,171 @@
+@import  url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+/* Variavéis CSS */
+:root {
+    --cor-primaria: #000;
+    --cor-secundaria: #f6f6f6;
+    /*cor terciária (fiquei com preguiça de renomear)*/
+    --azul-claro: #22D4FD;
+
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-secundaria: Montserrat;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* tag 'main' que contém todo o conteúdo do site */
+.pai {
+    padding: 5% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    gap: 82px;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+}
+
+.cabecalho {
+    padding: 2% 0 0 12%;
+}
+/* agrupamento dos links de navegação */
+.cabecalho__menu {
+    display: flex;
+    gap: 5em;
+}
+/* links de navegação individuais */
+.cabecalho_menu_link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--azul-claro);
+    text-decoration: none;
+}
+/* links de navegação individuais quando o cursor estiver em cima */
+.cabecalho_menu_link:hover {
+    color: #04aacf;
+}
+/* container que contém os textos e botôes */
+.sessao {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+/*cor do titulo grande*/
+h1 {
+    color: var(--cor-secundaria);
+}
+/* destaque azul no titulo grande */
+strong.negrito {
+    color: var(--azul-claro);
+}
+/* agrupamento dos botôes(âncoras) */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+/* "Acesse minhas redes" */
+.txth2 {
+    color: var(--cor-secundaria);
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-family: var(--fonte-principal);  
+}
+/*botões(âncoras) individuais */
+.btn_gh, .btn_ig, .btn_lk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7em;
+   color: var(--cor-secundaria);
+   font-family: var(--fonte-secundaria);
+   font-weight: 550;
+   width: 60%;
+   text-align: center;
+   border: 0.1em solid;
+   border-color: var(--azul-claro);
+   border-radius: 8px;
+   font-size: 1.2rem;
+   padding: 15px;
+    text-decoration: none;
+    transition: transform 0.4s;
+}
+/* botões(âncoras) individuais com o cursor em cima */
+.btn_gh:hover, .btn_ig:hover, .btn_lk:hover {
+    transform: scale(1.1);
+    background-color: #272727;
+}
+/* minha foto */
+.md {
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.8s;
+    width: 40%;
+}
+/* minha foto com o cursor em cima */
+.md:hover {
+    transform: scale(1.2);
+}
+/* titulo h1 principal */
+.titulo {
+    font-size: 1.8rem;
+    font-weight: 650;
+    font-family: var(--fonte-principal);
+    margin-bottom: 1%;
+}
+/* paragrafo p abaixo do h1 */
+.descricao {
+    color: var(--cor-secundaria);
+    font: 1.4rem normal;
+    font-family: var(--fonte-secundaria);
+    margin-bottom: 3%;
+}
+/* rodapé */
+.rodape {
+    padding: 2%;
+    font-size: 100%;
+    color: var(--cor-primaria);
+    background-color:var(--azul-claro);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+}
+/*reponsividade. quando uma tela chegar no tamanho definido, irá fazer tudo o que ta ali embaixo*/
+@media (max-width: 1200px) {
+    
+    .cabecalho {
+        padding: 9% 0 0 5% ;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+        padding-bottom: 4%;
+    }
+
+    .pai {
+        padding: 5%;
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .txth2 {
+        font-size: 145%;
+    }
+
+    .sessao {
+        width: auto;
+    }
+
+    .md {
+        width: 50%;
+    }
+}

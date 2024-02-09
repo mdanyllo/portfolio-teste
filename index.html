@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="./arq/perfil.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+</head>
+<body>
+    <!-- Aqui fica os links de navegação (home, sobre mim e projetos) -->
+    <header class="cabecalho">
+        <!-- container que contém as teclas de navegação, é basicamente um agrupamento dos elemntos. Aqui podemos usar o display flex e tudo mais -->
+        <nav class="cabecalho__menu">
+          <a class="cabecalho_menu_link" href="index.html">Home</a>
+          <a class="cabecalho_menu_link" href="about.html">Sobre mim</a>
+        </nav>
+
+    </header>
+        <!-- É onde literalmente fica todo o conteúdo, por isso chama tag pai -->
+        <main class="pai">
+            <!-- sessão criada para agrupar os textos e botões. Criamos para separa-los da iamgem através do flexbox com o flex direction: column -->
+            <section class="sessao">
+
+            <h1 class="titulo">Eleve seu negócio digital a outro nível <strong class="negrito">com um Front-end de qualidade!</strong></h1>
+
+            <p class="descricao">Olá! Sou Markus Danyllo, desenvolvedor Front-end com especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+            
+            <div class="buttons">
+                <h2 class="txth2">Acesse minhas redes:</h2>
+                <a class="btn_gh" href="https://github.com/mdanyllo" id="git">
+                    
+                    <img src="./arq/github.png" alt="GitHub">
+                    GitHub
+                </a>
+                
+                <a class="btn_lk" href="https://www.linkedin.com/in/markusdanyllo/">
+                    
+                    <img src="./arq/linkedin.png" alt="LinkedIn">
+                    LinkedIn
+
+
+
+                </a>
+                
+                <a class="btn_ig" href="https://www.instagram.com/md4nyllo/" id="insta">
+                    
+                    <img src="./arq/instagram.png" alt="Insta">
+                    Instagram
+
+                </a>
+            </div>
+            </section>
+            <!-- minha foto. o "title" serve pra aparecer um aviso quando o cursor estiver em cima da imagem -->
+            <img class="md" src="./arq/perfil.png" title="Markus programando no mundial de robótica na Alemanha" alt="Foto do Markus programando">
+        </main>
+
+        <!-- literalmente o rodapé do site -->
+        <footer class="rodape">
+
+            <p>Desenvolvido por Markus Danyllo.</p>
+            
+        </footer>
+</body>
+</html>
