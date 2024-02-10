@@ -1,4 +1,5 @@
 @import  url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 /* Variavéis CSS */
 :root {
@@ -8,7 +9,7 @@
     --azul-claro: #22D4FD;
 
     --fonte-principal: 'Krona One', sans-serif;
-    --fonte-secundaria: Montserrat;
+    --fonte-secundaria:'Montserrat', sans-serif;
 }
 
 * {
@@ -42,7 +43,7 @@ body {
 .cabecalho_menu_link {
     font-family: var(--fonte-secundaria);
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 800;
     color: var(--azul-claro);
     text-decoration: none;
 }
@@ -88,7 +89,7 @@ strong.negrito {
     gap: 0.7em;
    color: var(--cor-secundaria);
    font-family: var(--fonte-secundaria);
-   font-weight: 550;
+   font-weight: 800;
    width: 60%;
    text-align: center;
    border: 0.1em solid;
@@ -127,6 +128,7 @@ strong.negrito {
     color: var(--cor-secundaria);
     font: 1.4rem normal;
     font-family: var(--fonte-secundaria);
+    font-weight: 800;
     margin-bottom: 3%;
 }
 /* rodapé */
@@ -137,7 +139,7 @@ strong.negrito {
     background-color:var(--azul-claro);
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-weight: 600;
+    font-weight: 800;
 }
 /*reponsividade. quando uma tela chegar no tamanho definido, irá fazer tudo o que ta ali embaixo*/
 @media (max-width: 1200px) {
@@ -160,6 +162,12 @@ strong.negrito {
     .txth2 {
         font-size: 145%;
     }
+
+    /* botões(âncoras) individuais com o cursor em cima */
+    .btn_gh:hover, .btn_ig:hover, .btn_lk:hover {
+    transform: scale(1);
+    background-color: #272727;
+}
 
     .sessao {
         width: auto;
